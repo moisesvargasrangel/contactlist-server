@@ -20,6 +20,12 @@ const contactSchema = new Schema(
       minLength: 3,
       trim: true
     },
+    creator: {
+      type: String,
+      required: true,
+      type: Schema.Types.ObjectId,
+      ref: "User"
+    }
   },
 
   {
